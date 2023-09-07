@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E266" />
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N802" />
+          <option value="N803" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Designer.FileHasher.Ui_Form.*" />
+          <option value="hashlib.crc32" />
+          <option value="Designer.FileEncryption.Ui_Form.frame_4" />
+          <option value="Designer.FileEncryption.Ui_Form.pageMain" />
+          <option value="PyQt6.QtWidgets.QTextEdit.*" />
+          <option value="PrjFiles.FileEncrypt.generate_random_key" />
+          <option value="PrjFiles.FileEncrypt.QFileDialog" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

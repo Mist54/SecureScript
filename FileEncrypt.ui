@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Form</class>
+    <widget class="QWidget" name="Form">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>957</width>
+                <height>717</height>
+            </rect>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>957</width>
+                <height>717</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Form</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+                <spacer name="verticalSpacer_4">
+                    <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                        <size>
+                            <width>20</width>
+                            <height>102</height>
+                        </size>
+                    </property>
+                </spacer>
+            </item>
+            <item>
+                <widget class="QLabel" name="HeaderLabel">
+                    <property name="font">
+                        <font>
+                            <family>Rockwell</family>
+                            <pointsize>28</pointsize>
+                            <bold>true</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>File Encryption and Decryption</string>
+                    </property>
+                    <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <spacer name="verticalSpacer">
+                    <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                        <size>
+                            <width>20</width>
+                            <height>103</height>
+                        </size>
+                    </property>
+                </spacer>
+            </item>
+            <item>
+                <widget class="QFrame" name="frame">
+                    <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout">
+                        <item>
+                            <widget class="QSplitter" name="splitter">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <widget class="QLineEdit" name="FileSelect">
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>30</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="placeholderText">
+                                        <string>Choose file path</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton" name="BtnChooseFile">
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>200</width>
+                                            <height>16777215</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string>Choose File</string>
+                                    </property>
+                                </widget>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QSplitter" name="splitter_2">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <widget class="QLineEdit" name="FileSave">
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>30</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="placeholderText">
+                                        <string>Choose file Save Path</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton" name="BtnSaveFile">
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>200</width>
+                                            <height>16777215</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string>Save File</string>
+                                    </property>
+                                </widget>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLineEdit" name="HashKey">
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>40</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="label">
+                                <property name="font">
+                                    <font>
+                                        <family>Rockwell Condensed</family>
+                                        <pointsize>12</pointsize>
+                                    </font>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="text">
+                                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot;
+                                        color:#ff0000;&quot;&gt;Make Sure that Your Hash Key is safe and secure this
+                                        will be used for decryption of file &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                    </string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignCenter</set>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <spacer name="verticalSpacer_5">
+                                <property name="orientation">
+                                    <enum>Qt::Vertical</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                    <size>
+                                        <width>20</width>
+                                        <height>40</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </item>
+                        <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout">
+                                <item>
+                                    <widget class="QPushButton" name="BtnEncrypt">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>16777215</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>Encrypt</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="BtnDecrypt">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>16777215</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>Decrypt</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="BtnClear">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>16777215</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>Clear</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="BtnMainMenu">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>16777215</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>Close</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+            <item>
+                <spacer name="verticalSpacer_2">
+                    <property name="minimumSize">
+                        <size>
+                            <width>40</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                        <size>
+                            <width>37</width>
+                            <height>102</height>
+                        </size>
+                    </property>
+                </spacer>
+            </item>
+            <item>
+                <spacer name="verticalSpacer_3">
+                    <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                        <size>
+                            <width>20</width>
+                            <height>102</height>
+                        </size>
+                    </property>
+                </spacer>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
